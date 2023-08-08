@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import { AuthContext } from '../../contexts/AuthContext'
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap';" />
+
 
 function Navbar() {
   let navigate = useNavigate()
@@ -16,10 +18,9 @@ function Navbar() {
 
   if (usuario.token !== "") {
     navbarComponent = (
-      <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
+      <div className='w-full bg-purple-400 text-white flex justify-center py-4'>
         <div className="container flex justify-between text-lg">
-          <Link to='/home' className='text-2xl font-bold uppercase'>Blog Pessoal</Link>
-
+          <Link to='/home' className='text-2xl font-bold uppercase font-title'>Minas na Área</Link>
           <div className='flex gap-4'>
             <Link to='/postagens' className='hover:underline'>Home</Link>
             <Link to='/postagens' className='hover:underline'>Agendamento</Link>
@@ -36,9 +37,9 @@ function Navbar() {
   } else {
     // Adicione o return aqui para renderizar os links quando o usuário não está logado
     navbarComponent = (
-      <div className='w-full bg-indigo-900 text-white flex justify-center py-4'>
+      <div className='w-full bg-purple-400 text-white flex justify-center py-4'>
         <div className="container flex justify-between text-lg">
-          <Link to='/home' className='text-2xl font-bold uppercase'>Blog Pessoal</Link>
+          <Link to='/home' className='text-2xl font-bold uppercase font-title'>Minas na Área</Link>
 
           <div className='flex gap-4'>
             <Link to='/home' className='hover:underline'>Home</Link>
