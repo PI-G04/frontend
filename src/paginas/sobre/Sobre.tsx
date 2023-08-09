@@ -8,8 +8,8 @@ import sobreLogo from '../../assets/sobre.jpg'
 function Sobre() {
     return (
        
-        <div className="bg-pink-100 ...">
-        <div className="bg-pink-200 flex justify-center">
+        <div className="bg-purple-400 ...">
+        <div className="bg-purple-500 flex justify-center">
           <div className='container grid grid-cols-2 text-white'>
             <div className="flex flex-col gap-4 items-center justify-center py-4">
               <h2 className='text-5xl font-bold'>Sobre nós!</h2>
@@ -24,8 +24,8 @@ function Sobre() {
         </div>
      
 
-  <div className="grid justify-items-stretch m-20 ">
-  <h2 className='text-5xl justify-self-center'>Ola, conheça quem somos!</h2>
+  <div className=" m-20 ">
+  <h2 className='text-5xl p-15 text-center '>Ola, conheça quem somos!</h2>
             <p className='text-xl text-center p-10'>Num cenário onde a igualdade de gênero era um 
               ideal a ser alcançado, cinco jovens, unidos por uma 
               visão de transformação, decidiram criar um projeto revolucionário de 

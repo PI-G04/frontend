@@ -6,3 +6,12 @@
       background-size: cover;
       background-position: center;
   }
+  
+  
+  @media (max-width: 724px) {
+    .fundoCadastro {
+      float: none;
+      width: 100%;
+    }
+  }
+  
