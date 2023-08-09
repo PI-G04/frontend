@@ -24,9 +24,9 @@ function Sobre() {
         </div>
      
 
-  <div className=" m-20 ">
-  <h2 className='text-5xl p-15 text-center '>Ola, conheça quem somos!</h2>
-            <p className='text-xl text-center p-10'>Num cenário onde a igualdade de gênero era um 
+  <div className="  ">
+  <h2 className='text-5xl p-20 text-center '>Ola, conheça quem somos!</h2>
+            <p className='text-xl text-center p-'>Num cenário onde a igualdade de gênero era um 
               ideal a ser alcançado, cinco jovens, unidos por uma 
               visão de transformação, decidiram criar um projeto revolucionário de 
               ONG voltado para a inclusão de mulheres no mercado de trabalho. 
