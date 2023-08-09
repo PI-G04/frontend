@@ -5,7 +5,7 @@ import './Home.css';
 function Home() {
     return (
         <>
-        <div className="bg-purple-100 flex justify-center bg-purple-200">
+        <div className=" bg-purple-100 flex justify-center bg-purple-200">
           <div className='container grid grid-cols-2 text-white'>
             <div className="flex flex-col gap-4 items-center justify-center py-4">
               <h2 className='text-5xl font-bold'>Seja bem vinde!</h2>
