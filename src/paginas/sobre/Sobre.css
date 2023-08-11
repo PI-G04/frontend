@@ -1,8 +1,18 @@
 .fundoSobre {
     background-image: url(../../assets/sobre.jpg);
       background-repeat: no-repeat;
-      width: 100%;
-      min-height: 70vh;
+      width:50px;
+      min-height: 50px;
       background-size: cover;
       background-position: center;
   }
+  
+  .Perfil_img {
+      width:120px;
+      min-height:120px;
+  }
+  
+  .Perfil_icons {
+    width:70px;
+    min-height:70px;
+}
