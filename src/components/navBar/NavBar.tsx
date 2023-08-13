@@ -54,10 +54,9 @@ function Navbar() {
 
 
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-
                   <div className="flex flex-shrink-0 items-center">
                     <img
-                      className="h-8 w-auto"
+                      className="h-14 w-auto"
                       src="https://i.imgur.com/OAY8uOO.png"
                       alt="Logo Minas na Area"
                     />
@@ -79,7 +78,7 @@ function Navbar() {
 
                         <div className="hidden sm:ml-6 sm:block">
                           <div className="flex space-x-4">
-                            <Link to='/home' className='text-2xl text-white-100 font-title'>Minas na Área</Link>
+                            <Link to='/home' className='text-3xl text-white-100 font-title'>Minas na Área</Link>
                           </div>
                         </div>
 
@@ -112,9 +111,9 @@ function Navbar() {
                             </div>
                           </div>
                         </div>
-                        <div className="hidden sm:ml-6 sm:block">
+                        <div className="hidden sm:ml-4 sm:block">
                           <div className="flex space-x-4">
-                            <Link to='/home' className='text-2xl text-white-100 font-title'>Minas na Área</Link>
+                            <Link to='/home' className='text-3xl text-white-100 pt-2 font-title'>Minas na Área</Link>
                           </div>
                         </div>
                         <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
@@ -222,7 +221,7 @@ function Navbar() {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center ">
-                    <Link to='/home' className='text-2xl text-white-100 font-title'>Minas na Área</Link>
+                    <Link to='/home' className='text-3xl text-white-100 font-title'>Minas na Área</Link>
                     <img
                       className="right-96 h-14 w-auto"
                       src="https://i.imgur.com/OAY8uOO.png"

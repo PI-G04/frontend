@@ -40,7 +40,7 @@ function Login() {
 
       <div className='bg-pink-100 flex min-h-full flex-1 flex-col justify-center px-6 py-4 lg:px-12'>
         <div className=" flex justify-start items-start flex flex-col md:flex-row md:items-center">
-        <img
+          <img
             src="https://i.imgur.com/o6qVaqD.png" alt="Minas"
             className="max-w-full h-auto md:w-2/3 md:ml-08 md:mt-0 mt-8  mr-24 "
           />
@@ -89,7 +89,7 @@ function Login() {
 
 
                 <div className="flex w-full">
-                  <button type="submit" className=" flex justify-center py-2 px-4  bg-purple-600 hover:bg-green-100 focus:ring-green-100 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-gray-200 font-title  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                  <button type="submit" className=" flex justify-center py-2 px-4  bg-purple-600 hover:bg-green-400 focus:ring-green-100 focus:ring-offset-green-200 text-white w-full transition ease-in duration-200 text-center text-gray-200 font-title  shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                     {isLoading ? <RotatingLines
                       strokeColor="white"
                       strokeWidth="5"
@@ -106,7 +106,7 @@ function Login() {
                   <span className="text-lg font-title ">
                     <p>Ainda não tem uma conta?{' '}
 
-                      <Link to="/cadastro" className=" font-semibold inline-flex items-center text-center text-purple-600 hover:text-green-100 dark:text-green-100 dark:hover:text-white">
+                      <Link to="/cadastro" className=" font-semibold inline-flex items-center text-center text-purple-600 hover:text-green-400 dark:text-green-400 dark:hover:text-white">
 
                         Cadastre-se
 
@@ -121,7 +121,7 @@ function Login() {
 
             <div className="fundoLogin hidden lg:block"></div>
           </div>
-         
+
         </div>
 
       </div>
