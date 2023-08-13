@@ -57,9 +57,9 @@ function Sobre() {
   return (
     <div className="sobre-container">
       <div className="bg-pink-200 L3 flex justify-center">
-        <div className='bg-pink-300 container grid grid-cols-2 text-white'>
+        <div className='bg-green-100 container grid grid-cols-2 text-white'>
           <div className="flex flex-col gap-9 items-center justify-center">
-            <h2 className='text-7xl text-purple-400 font-bold'>Sobre nós!</h2>
+            <h2 className='text-9xl text-purple-400 font-title'>Sobre nós!</h2>
           </div>
           <div className="flex justify-center ">
             <img src={sobreLogo} alt="" className='w-2/3' />
@@ -67,13 +67,13 @@ function Sobre() {
         </div>
       </div>
         
-      <div className="bg-pink-200 L">
-        <div className="bg-pink-200 ">
+     
+        <div className="bg-pink-200 L">
           <div className="flex justify-center ">
             <div className='container grid grid-cols-1 p-20 bg-pink-100 text-purple-400'>
-              <div className="flex flex-col gap-4 items-center justify-center py-5">
-                <h2 className='text-5xl bottom-spacing text-center '>Nossa trajetoria ate aqui</h2>
-                  <p className='text-xl text-center '>Num cenário onde a igualdade de gênero era um 
+              <div className="flex flex-col gap-4 items-center font-title justify-center py-5">
+                <h2 className='text-6xl bottom-spacing font-p text-center '>Nossa trajetoria ate aqui</h2>
+                  <p className='text-3xl text-center '>Num cenário onde a igualdade de gênero era um 
               ideal a ser alcançado, cinco jovens, unidos por uma 
               visão de transformação, decidiram criar um projeto revolucionário de 
               ONG voltado para a inclusão de mulheres no mercado de trabalho. 
@@ -83,7 +83,7 @@ function Sobre() {
               ocupar cargos de liderança e influência.
             </p>
             
-            <p className='text-xl text-center '>A essência do projeto era inspirar e apoiar 
+            <p className='text-3xl text-center '>A essência do projeto era inspirar e apoiar 
               mulheres a ingressarem em áreas tradicionalmente dominadas por homens. 
               As duas mulheres e os dois homens acreditavam profundamente que, ao 
               proporcionar igualdade de oportunidades e capacitar as mulheres, a 
@@ -94,7 +94,7 @@ function Sobre() {
                diversos setores.
             </p>
 
-            <p className='text-xl text-center '>Com paixão e comprometimento, o grupo criou 
+            <p className='text-3xl text-center '>Com paixão e comprometimento, o grupo criou 
             uma plataforma inovadora que oferecia sessões virtuais com profissionais 
             especializados em empregabilidade. Essas sessões eram direcionadas para 
             ajudar as mulheres a construir currículos impressionantes, aprimorar suas 
@@ -104,7 +104,7 @@ function Sobre() {
             confiança e competência para enfrentar entrevistas e desafios com segurança.
             </p>
             
-            <p className='text-xl text-center'>No entanto, a jornada não foi isenta de 
+            <p className='text-3xl text-center'>No entanto, a jornada não foi isenta de 
               desafios. Um dos co-fundadoras, infelizmente, teve que partir
                precocemente devido a razões pessoais. Sua partida trouxe uma mistura 
                de tristeza e determinação para os outros membros do grupo. Eles sabiam
@@ -112,14 +112,14 @@ function Sobre() {
                 projeto e transformar a visão em realidade.
             </p>
 
-            <p className='text-xl text-center '>Além de suas metas intrínsecas, o projeto 
+            <p className='text-3xl text-center '>Além de suas metas intrínsecas, o projeto 
              estava alinhado com os Objetivos de Desenvolvimento Sustentável (ODS), 
              especialmente o ODS 5 - Igualdade de Gênero. A meta 5.B, que promove o 
              empoderamento das mulheres através das tecnologias de informação e 
              comunicação, ressoava profundamente com a essência do projeto.
             </p>
             
-            <p className='text-xl text-center'>Assim, impulsionados pela paixão, empatia e visão 
+            <p className='text-3xl text-center'>Assim, impulsionados pela paixão, empatia e visão 
               de futuro, quatro dos jovens continuaram a jornada que começaram. O 
               projeto "Minas na Area" nasceu não apenas como um impulso 
               para a inclusão de mulheres no mercado de trabalho, mas também como uma 
@@ -132,20 +132,20 @@ function Sobre() {
             </div>
           </div>
         </div>
-      </div>
+   
    
      
       <div className="bg-pink-200 flex justify-center items-center ">
-       <div className="membros-container L2  bg-pink-300">
+       <div className="membros-container L2  bg-green-100 font-title">
         <h2 className="titulo-membros EL text-6xl text-purple-400">Nossos Membros</h2>
-        <div className="membros-grid">
+        <div className="membros-grid EL">
           {groupMembers.map((member, index) => (
             <div
               key={index}
               className="member-container"
               onClick={() => handleMemberClick(member)}
             >
-              <div className="Perfil_img rounded-full">
+              <div className="Perfil_img rounded-full space-x-3">
                 {member.photo}
               </div>
             </div>

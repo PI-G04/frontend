@@ -51,16 +51,20 @@
 }
 
 .member-name {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
-  color: #8B5B8E;
+  color: black;
   margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .member-message {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 15px;
+  font-size: 1.5rem;
+  color: #1e0606;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .Perfil_img {
@@ -86,8 +90,8 @@
   padding-left: 50px;
 }
 .EL{
-  padding-bottom: 80px;
-  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-top: 80px;
 }
 .bottom-spacing {
   padding-bottom: 80px;

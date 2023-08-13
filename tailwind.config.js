@@ -37,7 +37,8 @@ module.exports = {
         }
       },
       fontFamily:{
-        'title': ['Rajdhani', 'sans-serif'] //font-title
+        'title': ['Rajdhani', 'sans-serif'] //font-title,
+        ,'p':['Georgia','Times New Roman', 'Times', 'serif']
 
       },
       borderRadius: {
