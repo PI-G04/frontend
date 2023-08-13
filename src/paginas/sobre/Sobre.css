@@ -1,37 +1,113 @@
+
 .fundoSobre {
-    background-image: url(../../assets/sobre.jpg);
-      background-repeat: no-repeat;
-      width:50px;
-      min-height: 50px;
-      background-size: cover;
-      background-position: center;
-  }
-  
-  .Perfil_img {
-      width:120px;
-      min-height:120px;
-  }
-  
-  .Perfil_icons {
-    width:70px;
-    min-height:70px;
+  background-image: url(../../assets/sobre1.png);
+    background-repeat: no-repeat;
+    width:250px;
+    min-height: 150px;
+    background-size: cover;
+    background-position: center;
+}
+
+.membros-container {
+  padding: 80px 102px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo-membros {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #8B5B8E;
+  padding-bottom: 20px;
+}
+
+.membros-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: nowrap; /* Impede quebrar para uma nova linha */
+  overflow-x: auto; /* Rolagem horizontal se não couber na tela */
+}
+
+.member-container {
+  cursor: pointer;
+}
+
+.popover-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.popover-content {
+  background-color: #F2D1CE;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.member-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #8B5B8E;
+  margin-bottom: 10px;
+}
+
+.member-message {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.Perfil_img {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Torna a imagem redonda */
+  overflow: hidden;
+}
+
+.Perfil_icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.EL2{
+  padding-bottom: 80px;
+  padding-top: 60px;
+  padding-right: 70px;
+  padding-left: 50px;
 }
 .EL{
-    padding-bottom: 80px;
-    padding-top: 160px;
+  padding-bottom: 80px;
+  padding-top: 100px;
 }
 .bottom-spacing {
-    padding-bottom: 80px;
-  }
+  padding-bottom: 80px;
+}
 .L{
-    padding-right: 103px;
-    padding-left: 103px;
+  padding-right: 103px;
+  padding-left: 103px;
 }
 .L2{
-    padding-right: 232px;
-    padding-left: 232px;
+  padding-right: 310px;
+  padding-left: 310px;
 }
-.L2{
-    padding-right: 200qpx;
-    padding-left: 200px;
+.L3{
+  padding-right: 102px;
+  padding-left: 102px;
+}
+.Espaço{
+  padding-bottom: 20px;
+}
+.L4{
+  padding-left: 270px;
+
 }

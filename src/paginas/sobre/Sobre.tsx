@@ -1,82 +1,79 @@
-import React from 'react';
-import './Sobre.css'
-import sobreLogo from '../../assets/sobre.jpg'
-import PerfilLucas from '../../assets/PerfilLucas.jpg'
-import PerfilIsrael from '../../assets/PerfilIsrael.jpg'
-import PerfilRillary from '../../assets/PerfilRillary.jpg'
-import PerfilMaria from '../../assets/PerfilMaria.jpg'
-import GitHub from '../../assets/icons8-github.svg'
-import Linkedin from '../../assets/icons8-linkedin (1).svg'
+import  { useState } from 'react';
+import './Sobre.css';
+import sobreLogo from '../../assets/sobre1.png';
+import Linkedin from '../../assets/icons8-linkedin (1).svg';
+import GitHub from '../../assets/icons8-github.svg';
+import PerfilMariaImage from '../../assets/PerfilMaria.jpg';
+import PerfilLucasImage from '../../assets/PerfilLucas.jpg';
+import PerfilIsraelImage from '../../assets/PerfilIsrael.jpg';
+import PerfilRillaryImage from '../../assets/PerfilRillary.jpg';
 
 const groupMembers = [
   {
     name: 'Maria De Fatima',
     linkedin: 'https://www.linkedin.com/in/mariadefatimabatistadecarvalho/',
     github: 'https://github.com/Maria621',
-    photo:  <img src={PerfilMaria} alt="Foto de um dos Membros" />
+    photo:  <img src={PerfilMariaImage}></img>,
+    message:'Óla ,  tenho 24 anos, com experiência profissional no Boticário e Salomão Zoppi. Habilidades em administração, secretariado e informática. Possuo paixão por criação digital me levou a estudar Gestão da Tecnologia da Informação e a ingressar na Generation para aprender desenvolvimento full stack. '
   },
   {
     name: 'Lucas Vinicius',
     linkedin: 'https://www.linkedin.com/in/lucasbarbato/',
     github: 'https://github.com/lucaolv',
-    photo: <img src={PerfilLucas} alt="Foto de um dos Membros" />
+    photo: <img src={PerfilLucasImage}></img>,
+    message:'Olá, Sou uma pessoa muito motivada a aprender e me interesso por coisas inovadoras, e foi assim que me apaixonei pela tecnologia. Sempre tive foco nos estudos e a persistência fez eu sempre buscar o lugar onde me identifico para poder trabalhar com aquilo que amo. Estou sempre em um constante aprendizado, procurando aprimorar minhas habilidades usando minha curiosidade e comunicação para chegar nos mais experientes.'
   },
   {
     name: 'Israel Bernado',
     linkedin: 'https://www.linkedin.com/in/israel-bernardo-da-silva/',
     github: 'https://github.com/Israelsilva02',
-    photo: <img src={PerfilIsrael} alt="Foto de um dos Membros" />
+    photo: <img src={PerfilIsraelImage}></img>,
+    message:'Olá, Estudo Faculdade de análise e desenvolvimento de sistemas no Senac. Autodidata e curioso, complemento meus estudos com o curso de Desenvolvedor Júnior Full Stack da Generation. Minhas experiências na CORTEVA e projetos da faculdade me deram conhecimentos em Java, Spring Boot, SQL e mais. Comunicativo e comprometido, estou sempre em busca de aprendizado.'
   },
   {
     name: 'Raissa Rillary',
     linkedin: 'https://www.linkedin.com/in/rillarydev/',
     github: 'https://github.com/RillaryDev',
-    photo:  <img src={PerfilRillary} alt="Foto de um dos Membros" />
+    photo:  <img src={PerfilRillaryImage} ></img>,
+    message:'Sou Raissa Rillary, apaixonada por tecnologia e determinada a causar impacto. Minha trajetória inclui projetos desafiadores, como o "Minas na Área", inspirado pelo ODS 5. Minha jornada do GitHub ao LinkedIn reflete meu compromisso em capacitar mulheres na tecnologia.'
   },
  
 ];
 
-const memberElements = groupMembers.map((member, index) => (
-  <div key={index} className="  ">
-    <div className="rounded-full Perfil_img overflow-hidden ">
-     {member.photo} 
-    </div>
-    <h3 className="text-lg text-center font-semibold">{member.name}</h3>
-    <div className="Perfil_icons flex m-4 gap-2 space-x-2 ">
-      <a href={member.linkedin} target="_blank" rel="noreferrer">
-        <img src={Linkedin} alt={`LinkedIn de ${member.name}`} />
-      </a>
-      <a href={member.github} target="_blank" rel="noreferrer">
-        <img src={GitHub} alt={`GitHub de ${member.name}`} />
-      </a>
-    </div>
-  </div>
-));
-
 function Sobre() {
-    return (
-       
-  <div className="">
-    <div className="bg-pink-200 L3 flex justify-center">
-      <div className='bg-pink-300 container grid grid-cols-2 text-white'>
-        <div className="flex flex-col gap-9 items-center justify-center">
-          <h2 className='text-5xl font-bold'>Sobre nós!</h2>
-            <p className='text-xl'>Nossa trajetoria ate aqui</p>
-  
+  const [selectedMember, setSelectedMember] = useState(null);
+
+ 
+  const handleMemberClick = (member) => {
+    if (selectedMember === member) {
+      setSelectedMember(null); // Fechar o popover se clicar novamente no mesmo membro
+    } else {
+      setSelectedMember(member);
+    }
+  };
+
+  const currentMember = selectedMember;
+
+  return (
+    <div className="sobre-container">
+      <div className="bg-pink-200 L3 flex justify-center">
+        <div className='bg-pink-300 container grid grid-cols-2 text-white'>
+          <div className="flex flex-col gap-9 items-center justify-center">
+            <h2 className='text-7xl text-purple-400 font-bold'>Sobre nós!</h2>
           </div>
-        <div className="flex justify-center ">
-      <img src={sobreLogo} alt="" className='w-2/3' />  
-    </div>
-  </div>
-</div>
+          <div className="flex justify-center ">
+            <img src={sobreLogo} alt="" className='w-2/3' />
+          </div>
+        </div>
+      </div>
         
-  <div className="bg-pink-200 L">
-    <div className="bg-pink-200 ">
-    <div className=" flex justify-center ">
-      <div className='container grid grid-cols-1 p-20 bg-pink-100 text-purple-400'>
-        <div className="flex flex-col gap-4 items-center justify-center py-5">
-          <h2 className='text-5xl bottom-spacing text-center '>Ola, conheça quem somos!</h2>
-            <p className='text-xl text-center '>Num cenário onde a igualdade de gênero era um 
+      <div className="bg-pink-200 L">
+        <div className="bg-pink-200 ">
+          <div className="flex justify-center ">
+            <div className='container grid grid-cols-1 p-20 bg-pink-100 text-purple-400'>
+              <div className="flex flex-col gap-4 items-center justify-center py-5">
+                <h2 className='text-5xl bottom-spacing text-center '>Nossa trajetoria ate aqui</h2>
+                  <p className='text-xl text-center '>Num cenário onde a igualdade de gênero era um 
               ideal a ser alcançado, cinco jovens, unidos por uma 
               visão de transformação, decidiram criar um projeto revolucionário de 
               ONG voltado para a inclusão de mulheres no mercado de trabalho. 
@@ -131,22 +128,49 @@ function Sobre() {
               vidas, enfrentar desafios e pavimentar o caminho para um futuro mais justo, 
               igualitário e brilhante para todos.
             </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    </div>
-    <div className="bg-pink-200 flex justify-center items-center text-purple-400">
-      <div className="text-center bg-pink-300 L2">
-        <h2 className='text-5xl EL font-bold'>Nossos Membros</h2>
-          <div className="flex flex-wrap justify-center items-center space-x-9 m-10">
-        
-              {memberElements}
-
+   
+     
+      <div className="bg-pink-200 flex justify-center items-center ">
+       <div className="membros-container L2  bg-pink-300">
+        <h2 className="titulo-membros EL text-6xl text-purple-400">Nossos Membros</h2>
+        <div className="membros-grid">
+          {groupMembers.map((member, index) => (
+            <div
+              key={index}
+              className="member-container"
+              onClick={() => handleMemberClick(member)}
+            >
+              <div className="Perfil_img rounded-full">
+                {member.photo}
+              </div>
+            </div>
+          ))}
+        </div>
+        {currentMember && (
+          <div className="popover-container" onClick={() => setSelectedMember(null)}>
+            <div className="popover-content" onClick={(e) => e.stopPropagation()}>
+              <h3 className="member-name">{currentMember.name}</h3>
+              <p className="member-message">{currentMember.message}</p>
+              <div className="Perfil_icons">
+                <a href={currentMember.linkedin} target="_blank" rel="noreferrer">
+                  <img src={Linkedin} alt={`LinkedIn de ${currentMember.name}`} />
+                </a>
+                <a href={currentMember.github} target="_blank" rel="noreferrer">
+                  <img src={GitHub} alt={`GitHub de ${currentMember.name}`} />
+                </a>
+              </div>
+            </div>
           </div>
+        )}
       </div>
     </div>
-  </div> 
- );
+    </div>
+  );
 }
+
 export default Sobre;
