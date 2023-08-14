@@ -8,6 +8,14 @@ import PerfilLucasImage from '../../assets/PerfilLucas.jpg';
 import PerfilIsraelImage from '../../assets/PerfilIsrael.jpg';
 import PerfilRillaryImage from '../../assets/PerfilRillary.jpg';
 
+interface Member {
+  name: string,
+    linkedin: string,
+    github: string,
+    photo:  string,
+    message: string
+}
+
 const groupMembers = [
   {
     name: 'Maria De Fatima',
@@ -39,19 +47,17 @@ const groupMembers = [
   },
  
 ];
-
-function Sobre() {
-  const [selectedMember, setSelectedMember] = useState(null);
-
+/*
+function Sobre({ groupMembers }: { groupMembers: Member[] }) {
+  const [selectedMember, setSelectedMember] = useState<Member | null>(null);
  
-  const handleMemberClick = (member) => {
+  const handleMemberClick = (member: Member) => {
     if (selectedMember === member) {
       setSelectedMember(null); // Fechar o popover se clicar novamente no mesmo membro
     } else {
       setSelectedMember(member);
     }
   };
-
   const currentMember = selectedMember;
 
   return (
@@ -173,4 +179,4 @@ function Sobre() {
   );
 }
 
-export default Sobre;
+export default Sobre;*/

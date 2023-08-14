@@ -97,7 +97,7 @@ function FormularioTema() {
 
  
   return (
-    <div className="p-20 font-p flex justify-center items-center ">
+    <div className="bg-pink-100 p-20 font-p flex justify-center items-center h-screen">
     <div className="container flex flex-col items-center justify-center mx-auto">
       <h1 className="text-4xl text-center ">
         {id === undefined ? 'Cadastre um novo tipo de assunto' : 'Editar assunto'}

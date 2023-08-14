@@ -15,8 +15,8 @@ import FormularioTema from './components/temas/formularioTema/FormularioTema';
 import DeletarTema from './components/temas/deletarTema/DeletarTema';
 import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens';
 import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem';
-
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+
 
 function App() {
   
@@ -32,6 +32,7 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/cadastro" element={<Cadastro />} />
               <Route path="/home" element={<Home />} />
+              
               <Route path="/assunto" element={<ListaTemas />} />
               <Route path="/cadastroAssunto" element={<FormularioTema />} />
               <Route path="/editarAssunto/:id" element={<FormularioTema />} />
