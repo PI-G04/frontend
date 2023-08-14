@@ -39,7 +39,7 @@ function ListaTemas() {
   }, [temas.length]);
   return (
     <>
-    <div className='bg-pink-100'>
+    <div className=''>
       {temas.length === 0 && (
         <Dna
           visible={true}

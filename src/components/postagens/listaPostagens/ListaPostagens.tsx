@@ -43,7 +43,7 @@ function ListaPostagens() {
 
   return (
     <>
-     <div className='bg-pink-100 min-h-screen'>
+     <div className='bg-pink-100 h-screen'>
       {postagens.length === 0 && (
         <Dna
           visible={true}
@@ -54,7 +54,7 @@ function ListaPostagens() {
           wrapperClass="dna-wrapper mx-auto"
         />
       )}
-      <div className='container mx-auto p-7 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+      <div className='container  p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {postagens.map((postagem) => (
           <CardPostagem key={postagem.id} post={postagem} />
         ))}

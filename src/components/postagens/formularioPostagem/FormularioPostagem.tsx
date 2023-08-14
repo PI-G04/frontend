@@ -139,9 +139,9 @@ function FormularioPostagem() {
 
   return (
    
-
-    <div className="bg-pink-100 font-p container flex flex-col mx-auto items-center">
-      <h1 className="text-4xl text-center my-8">{id !== undefined ? 'Editar Postagem' : 'Cadastrar Postagem'}</h1>
+<div className="bg-pink-100 h-screen">
+    <div className="font-p container flex flex-col mx-auto items-center">
+      <h1 className="text-2xl text-center my-8">{id !== undefined ? 'Editar Postagem' : 'Cadastrar Postagem'}</h1>
 
       <form onSubmit={gerarNovaPostagem} className="flex flex-col w-1/2 gap-4">
         <div className="flex flex-col gap-2">
@@ -194,6 +194,7 @@ function FormularioPostagem() {
           {carregandoTema ? <span>Carregando</span> : id !== undefined ? 'Editar' : 'Cadastrar'}
         </button>
       </form>
+    </div>
     </div>
    
   );

@@ -9,13 +9,13 @@ function ModelPostagem() {
   return (
     <>
       <Popup 
-      trigger={<button className='rounded-xl p-4 text-white bg-pink-500 hover:bg-green-400 flex items-center m-1 text-white-300'>Nova Mentoria</button>} modal>
+      trigger={<button className='rounded-xl p-3 text-white bg-pink-500 hover:bg-green-400 flex   text-white-300'>Nova Mentoria</button>} modal>
         <div>
           <FormularioPostagem />
         </div>
       </Popup>
       <Popup 
-      trigger={<button className='rounded-xl text-white bg-pink-500 hover:bg-green-400 flex items-center m-1 text-white-300'>Novo Assunto</button>} modal >
+      trigger={<button className='rounded-xl p-3 text-white bg-pink-500 hover:bg-green-400 flex  text-white-300'>Novo Assunto</button>} modal >
         <div>
           <FormularioTema />
         </div>
