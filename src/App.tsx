@@ -20,6 +20,7 @@ import FormularioPostagem from './components/postagens/formularioPostagem/Formul
 
 import Perfil from './paginas/perfil/Perfil';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
+import Contato from './paginas/contato/Contato';
 
 function App() {
   
@@ -44,6 +45,7 @@ function App() {
               <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
               <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
               <Route path="/perfil" element={<Perfil />} />
+              <Route path="/contato" element={<Contato />} />
             </Routes>
           </div>
           <Footer />

@@ -72,7 +72,7 @@ function Navbar() {
                             <div className='flex gap-8 text-xl text-white-100 font-title'>
                               <button className='rounded-nav w-20 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200  duration-300 '><Link to='/home'>Home</Link> </button>
                               <button className='rounded-nav w-28 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200 duration-300 '><Link to='/postagens'>Mentorias</Link> </button>
-                              <button className='rounded-nav w-20 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200  duration-300 '><Link to='/login'>Contato</Link></button>
+                              <button className='rounded-nav w-20 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200  duration-300 '><Link to='/contato'>Contato</Link></button>
                             </div>
                           </div>
                         </div>
@@ -94,7 +94,7 @@ function Navbar() {
                                   <Link className="block rounded-md px-4 font-title" to='/home'>Mentorias</Link>
                                 </div>
                                 <div className="hover:bg-purple-400 text-white-100 text-lg mb-2 ">
-                                  <Link className="block rounded-md px-4 font-title" to='/home'>Contato</Link>
+                                  <Link className="block rounded-md px-4 font-title" to='/contato'>Contato</Link>
                                 </div>
                               </Disclosure.Button>
                             </div>
@@ -108,7 +108,7 @@ function Navbar() {
                             <div className='flex gap-8 text-xl text-white-100 font-title'>
                               <button className='rounded-nav w-20 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200  duration-300 '><Link to='/home'>Home</Link> </button>
                               <button className='rounded-nav w-28 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200 duration-300 '><Link to='/postagens'>Agendamento</Link> </button>
-                              <button className='rounded-nav w-20 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200  duration-300 '><Link to='/login'>Contato</Link></button>
+                              <button className='rounded-nav w-20 transition ease-in-out bg-purple-600  hover:scale-110 hover:bg-pink-200  duration-300 '><Link to='/contato'>Contato</Link></button>
                             </div>
                           </div>
                         </div>
@@ -129,7 +129,7 @@ function Navbar() {
                                   <Link className="block rounded-md px-4 font-title" to='/home'>Agendamento</Link>
                                 </div>
                                 <div className="hover:bg-purple-400 text-white-100 text-lg mb-2 ">
-                                  <Link className="block rounded-md px-4 font-title" to='/home'>Contato</Link>
+                                  <Link className="block rounded-md px-4 font-title" to='/contato'>Contato</Link>
                                 </div>
                               </Disclosure.Button>
                             </div>
