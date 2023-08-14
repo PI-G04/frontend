@@ -1,8 +1,6 @@
 import { createContext, ReactNode, useState } from "react"
 
 import UsuarioLogin from "../models/UsuarioLogin"
-
-
 import { login } from "../service/Service"
 // import { toastAlerta } from "../utils/toastAlerta"
 
@@ -25,6 +23,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
         id: 0,
         nome: "",
         usuario: "",
+        tipo:"",
         senha: "",
         foto: "",
         token: ""
@@ -51,12 +50,14 @@ export function AuthProvider({ children }: AuthProviderProps) {
             id: 0,
             nome: "",
             usuario: "",
+            tipo:"",
             senha: "",
             foto: "",
             token: ""
         })
     }
 
+  
     return (
         <AuthContext.Provider value={{ usuario, handleLogin, handleLogout, isLoading }}>
             {children}

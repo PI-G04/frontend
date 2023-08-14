@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext';
@@ -39,6 +39,7 @@ function ListaTemas() {
   }, [temas.length]);
   return (
     <>
+    <div className='bg-pink-100'>
       {temas.length === 0 && (
         <Dna
           visible={true}
@@ -49,8 +50,8 @@ function ListaTemas() {
           wrapperClass="dna-wrapper mx-auto"
         />
       )}
-      <div className="flex justify-center w-full my-4">
-        <div className="container flex flex-col">
+      <div className=" flex justify-center p-20">
+        <div className="container flex flex-col ">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {temas.map((tema) => (
               <>
@@ -59,6 +60,7 @@ function ListaTemas() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </>
   );

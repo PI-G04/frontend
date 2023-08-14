@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { AuthContext } from '../../../contexts/AuthContext'
 import Tema from '../../../models/Tema'
@@ -43,7 +43,7 @@ function DeletarTema() {
     }, [id])
 
     function retornar() {
-        navigate("/temas")
+        navigate("/assunto")
     }
 
     async function deletarTema() {
@@ -63,10 +63,11 @@ function DeletarTema() {
         retornar()
     }
     return (
-        <div className='container w-1/3 mx-auto'>
-            <h1 className='text-4xl text-center my-4'>Deletar tema</h1>
+        <div className='bg-white-400 min-h-screen flex justify-center items-center'>
+          <div className=' container w-1/3 mx-auto'>
+             <h1 className='text-6xl text-p p-4'>Deletar Assunto</h1>
 
-            <p className='text-center font-semibold mb-4'>Você tem certeza de que deseja apagar o tema a seguir?</p>
+            <p className='text-center font-semibold mb-4'>Você tem certeza de que deseja apagar o tipo de Assunto a seguir?</p>
 
             <div className='border flex flex-col rounded-2xl overflow-hidden justify-between'>
                 <header className='py-2 px-6 bg-indigo-600 text-white font-bold text-2xl'>Tema</header>
@@ -78,6 +79,7 @@ function DeletarTema() {
                     </button>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

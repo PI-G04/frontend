@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useContext, useEffect, useState } from 'react';
+import { ChangeEvent, useContext, useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext';
 import Tema from '../../../models/Tema';
@@ -85,7 +85,7 @@ function FormularioTema() {
   }
 
   function retornar() {
-    navigate("/temas")
+    navigate("/assunto")
   }
 
   useEffect(() => {
@@ -95,15 +95,17 @@ function FormularioTema() {
     }
   }, [token]);
 
+ 
   return (
+    <div className="p-20 font-p flex justify-center items-center ">
     <div className="container flex flex-col items-center justify-center mx-auto">
-      <h1 className="text-4xl text-center my-8">
-        {id === undefined ? 'Cadastre um novo tema' : 'Editar tema'}
+      <h1 className="text-4xl text-center ">
+        {id === undefined ? 'Cadastre um novo tipo de assunto' : 'Editar assunto'}
       </h1>
 
       <form className="w-1/2 flex flex-col gap-4" onSubmit={gerarNovoTema}>
-        <div className="flex flex-col gap-2">
-          <label htmlFor="descricao">Descrição do tema</label>
+        <div className="p-12 text-2xl flex flex-col gap-2">
+          <label htmlFor="descricao">Descrição do Assunto</label>
           <input
             type="text"
             placeholder="Descrição"
@@ -114,12 +116,13 @@ function FormularioTema() {
           />
         </div>
         <button
-          className="rounded text-slate-100 bg-indigo-400 hover:bg-indigo-800 w-1/2 py-2 mx-auto block"
+          className="rounded text-slate-100 bg-green-100 hover:bg-green-200 w-1/2 py-2 mx-auto block"
           type="submit"
         >
           {id === undefined ? 'Cadastrar' : 'Editar'}
         </button>
       </form>
+    </div>
     </div>
   );
 }

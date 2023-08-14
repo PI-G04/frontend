@@ -65,7 +65,7 @@ function Navbar() {
 }
 
 export default Navbar */
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
 
@@ -92,16 +92,16 @@ function Navbar() {
           <div className='flex gap-4'>
             {userTipo ? (
               <>
-              <Link to='/postagens' className='hover:underline'>
+              <Link to='/mentorias' className='hover:underline'>
                   Home
                 </Link>
-                <Link to='/postagens' className='hover:underline'>
+                <Link to='/mentorias' className='hover:underline'>
                   Postagens
                 </Link>
-                <Link to='/temas' className='hover:underline'>
+                <Link to='/assunto' className='hover:underline'>
                   Temas
                 </Link>
-                <Link to='/cadastroTema' className='hover:underline'>
+                <Link to='/cadastroAssunto' className='hover:underline'>
                   Cadastrar tema
                 </Link>
                 <Link to='/perfil' className='hover:underline'>
@@ -113,10 +113,10 @@ function Navbar() {
               </>
             ) : (
               <>
-                <Link to='/postagens' className='hover:underline'>
+                <Link to='/mentorias' className='hover:underline'>
                   Home
                 </Link>
-                <Link to='/postagens' className='hover:underline'>
+                <Link to='/mentorias' className='hover:underline'>
                   Agendamento
                 </Link>
                 <Link to='/perfil' className='hover:underline'>
